@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+        
+        *{
+            box-sizing: border-box;
+        }
+        
+        .main{
+            display: block;
+            margin:auto;
+           
+            
+            width: 30%;
+            height: 65%;
+            border: 1px solid black;
+        }
+        .avatar img{
+            width: 2cm;
+            height: 2cm;
+            border-radius: 50%;
+            border:4px solid green
+        }
+        .info-button button{
+            background-color:white;
+            border:none;
+            
+
+        }
+
+        .upper-section{
+            
+            display: flex;
+            background-color: azure;
+            align-items: center;
+            padding:5px;
+
+            
+        }
+        .flex-item{
+            margin:5px;
+        }
+        .flex-item:last-child{
+            margin-left:auto;
+        }
+        .mid-section img{
+            width:100%;
+        }
+        .lower-section img{
+            height: 1cm;
+            width: 1cm;
+            
+        }
+        .lower-section{
+            display: flex;
+            padding: 10px;
+            align-items: center;
+        }
+
+   </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="upper-section">
+            <div class="avatar flex-item">
+                <img src="./img/avatar.webp" alt="img not found">
+            </div>
+            <div class="name flex-item">
+                <h3>vishalchauhan_.0881</h3>
+            </div>
+            <div class="info-button flex-item">
+                <button style="font-size:24px"> <i class="fa fa-ellipsis-v"></i></button>
+            </div>
+        </div>
+        <div class="mid-section">
+            <img src="./img/shri-ram.jpg" alt="">
+        </div>
+        <div class="lower-section">
+            <img src="./img/heart.png" alt="">
+            <img src="./img/chat.png" alt="">
+            <img src="./img/send.png" alt="">
+
+        </div>
+    </div>
+    
+</body>
+</html>

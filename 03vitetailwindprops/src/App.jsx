@@ -14,6 +14,7 @@ let ob1 = createObject("vishal ", "vishalchauhan0688@gmail.com");
 let ob2 = createObject("vishal chauhan " , "vishalchauha06882@gmail.com");
 let ob3 = createObject("devyansh " , "asefklhauha06882@gmail.com");
 
+var array = [ ob1, ob2, ob3];
 
 
 function App() {
@@ -26,12 +27,13 @@ function App() {
 
 
      <div className="flex flex-row flex-wrap" >
-      <Card obj = {ob1}/>
-      <Card obj = {ob2}/>
-      <Card obj = {ob3}/>
-      <Card obj = {ob1}/>
-      <Card obj = {ob2}/>
-      <Card obj = {ob3}/>
+      
+      {
+        array.map((item) => (
+          <Card obj = {item} />
+        ))
+      }
+      
      </div>
 
     
