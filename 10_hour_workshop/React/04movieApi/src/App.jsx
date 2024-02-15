@@ -23,7 +23,7 @@ function App() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    const data = searchData.replace(/[^a-zA-Z0-9]/g, "").trim();
+    const data = searchData.replace(/[^a-zA-Z0-9:,'-]/, "").trim();
     console.log("vishalllll", data);
 
     if (!data) {
