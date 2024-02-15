@@ -1,6 +1,12 @@
 import { useState, useEffect } from "react";
 
+
+const api_key = import.meta.env.VITE_API_KEY;
+
+
+
 const useSearch = (movieName) => {
+ 
   const [movieData, setMovieData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -10,7 +16,7 @@ const useSearch = (movieName) => {
     if (movieName) {
       const fetchMovie = async () => {
         try {
-          const apikey = "90f01bb6";
+          const apikey = api_key;
           const response = await fetch(
             `https://www.omdbapi.com/?apikey=${apikey}&s=${movieName}`
           );
