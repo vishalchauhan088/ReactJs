@@ -5,6 +5,7 @@ import Event from "./components/Event"
 import EventArg from "./components/EventArg"
 import InputField from "./components/InputField"
 import MultiForm from "./components/MultiForm"
+import Github from "./components/Github"
 
 function App() {
   const[formData, setFormData] = useState({name:"",email:""});
@@ -61,12 +62,14 @@ function App() {
 
       </div> */}
 
-        <div className="container">
+        {/* <div className="container">
             <MultiForm handleChange={handleChange} handleSubmit={handleSubmit} formData={formData}/>
         </div>
 
       <p>name : {formData.name}</p>
-      <p>email :{formData.email}</p>
+      <p>email :{formData.email}</p> */}
+
+      <Github/>
 
 
       
